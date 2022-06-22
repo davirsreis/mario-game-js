@@ -1,4 +1,8 @@
 <div align="center">
+    <h1>mario-game</h1>
+</div>
+
+<div align="center">
   <img src="./img/mario-game.png" >
 </div>
 
