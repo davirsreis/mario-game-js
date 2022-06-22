@@ -18,5 +18,5 @@ Desenvolvimento de um jogo simples do Mario, que se assemelha ao jogo 'T-Rex Run
 
 ## Como jogar
 
-1. Acesse o link:
+1. Acesse o link: [mario-game-js-davirsreis.vercel.app](https://mario-game-js-davirsreis.vercel.app/)
 2. Baixe o arquivo em ZIP, extraia e abra o arquivo .html com o seu navegador
