@@ -7,6 +7,7 @@ const audioJump = document.querySelector('.jump-audio');
 const audioGameOver = document.querySelector('.game-over-audio');
 const audioThemeSong = document.querySelector('.theme-song-audio');
 const btJump = document.querySelector('.button-jump');
+let span = document.querySelector('.score-count'); 
 
 const start = () => {
     pipe.classList.add('pipe-animation');
@@ -14,20 +15,11 @@ const start = () => {
     btJump.style.display = 'flex';
     audioThemeSong.volume = 0.1;
     audioThemeSong.play();
+    Score(30)
 }
 
 const restart = () => {
-    
     location.reload();
-    
-    /*
-    startboard.style.display = 'flex';
-    restartboard.style.display = 'none';
-    mario.src = './img/mario.gif'
-    mario.style.width = '150px';
-    mario.style.marginLeft = '0px';
-    pipe.style.left = '-80px';
-    */
 }
 
 const jump = () => {
@@ -48,7 +40,8 @@ const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
     const sceneryPosition = scenery.offsetLeft;
-
+    
+    
     if (pipePosition <= 120 && marioPosition < 100 && pipePosition > 0){
 
         pipe.style.animation = 'none';
@@ -74,10 +67,29 @@ const loop = setInterval(() => {
 
         clearInterval(loop);
 
+        max=limit;
+
     }
 
+    
 }, 10)
 
 
 document.addEventListener('keydown', jump);
+
+var limit = 0;
+var max = 100000;
+
+        function Score(delay) {
+        if (![10,20,30].includes(delay)){delay = 1;}
+        finalDelay = 1 / delay;
+
+        const msDelay = finalDelay * 1_000;
+        if (limit < max) {
+            span.innerHTML=limit;
+            limit++;
+            return setTimeout(() => Score(delay), msDelay)
+        }
+
+        }
 

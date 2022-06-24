@@ -145,17 +145,22 @@ button:hover {
 }
 
 .score-board{
-    width: 100px;
-    right: 0;
+    width: 900px;
     position: absolute;
-    background: brown;
-    border: 1px solid black;
-
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-    color: aliceblue;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-board p {
+    width: 200px;
+    color:black;
+    border: 1px black solid;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
