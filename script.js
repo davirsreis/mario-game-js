@@ -42,8 +42,7 @@ const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
     const sceneryPosition = scenery.offsetLeft;
-    
-    
+
     if (pipePosition <= 120 && marioPosition < 100 && pipePosition > 0){
 
         pipe.style.animation = 'none';
@@ -82,16 +81,16 @@ document.addEventListener('keydown', jump);
 var limit = 0;
 var max = 100000;
 
-        function Score(delay) {
-        if (![10,20,30].includes(delay)){delay = 1;}
-        finalDelay = 1 / delay;
+function Score(delay) {
+    if (![10,20,30].includes(delay)){delay = 1;};
+    finalDelay = 1 / delay;
 
-        const msDelay = finalDelay * 1_000;
-        if (limit < max) {
-            score.innerHTML=limit;
-            limit++;
-            return setTimeout(() => Score(delay), msDelay)
-        }
+    const msDelay = finalDelay * 1_000;
+    if (limit < max) {
+        score.innerHTML=limit;
+        limit++;
+        return setTimeout(() => Score(delay), msDelay)
+    };
+};
 
-        }
 
