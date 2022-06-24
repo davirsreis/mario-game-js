@@ -7,12 +7,14 @@ const audioJump = document.querySelector('.jump-audio');
 const audioGameOver = document.querySelector('.game-over-audio');
 const audioThemeSong = document.querySelector('.theme-song-audio');
 const btJump = document.querySelector('.button-jump');
-let span = document.querySelector('.score-count'); 
+const scoreboard = document.querySelector('.score-board');
+let score = document.querySelector('.score-count'); 
 
 const start = () => {
     pipe.classList.add('pipe-animation');
     startboard.style.display = 'none';
     btJump.style.display = 'flex';
+    scoreboard.style.display= 'flex';
     audioThemeSong.volume = 0.1;
     audioThemeSong.play();
     Score(30)
@@ -86,7 +88,7 @@ var max = 100000;
 
         const msDelay = finalDelay * 1_000;
         if (limit < max) {
-            span.innerHTML=limit;
+            score.innerHTML=limit;
             limit++;
             return setTimeout(() => Score(delay), msDelay)
         }

@@ -148,7 +148,7 @@ button:hover {
     width: 900px;
     position: absolute;
     z-index: 1;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
