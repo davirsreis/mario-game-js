@@ -213,7 +213,7 @@ footer {
 
 footer p {
     font-size: 20px;
-    color: white;
+    color: rgb(170, 170, 170);
     padding: 13px;
 }
 
@@ -225,5 +225,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #ccc;
+    color: rgb(170, 170, 170);
 }
