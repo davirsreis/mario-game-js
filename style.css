@@ -10,8 +10,15 @@
     font-family: 'New-Super-Mario-Font-U';
 }
 
+.title {
+    margin: 0 auto;
+    width: 900px;
+}
+
 h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 80px;
 }
 
@@ -62,23 +69,24 @@ p {
 
 .button-jump {
     margin: 0 auto;
-    width: 200px;
+    width: 900px;
     margin-top: 20px;
-    position: relative;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .btJump {
-    border: 1px black solid;
+    width: 250px;
+    font-size: 40px;
+    color: black;
+    border: 3px black solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 40px;
 }
 
 .btJump:hover {
-    border: 1px white solid;
     color: white;
     background-color: black;
 }

@@ -11,7 +11,7 @@ const btJump = document.querySelector('.button-jump');
 const start = () => {
     pipe.classList.add('pipe-animation');
     startboard.style.display = 'none';
-    btJump.style.display = 'block';
+    btJump.style.display = 'flex';
     audioThemeSong.volume = 0.1;
     audioThemeSong.play();
 }
