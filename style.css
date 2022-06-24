@@ -1,15 +1,18 @@
-@import url('http://fonts.cdnfonts.com/css/new-super-mario-font-u');
+@font-face {
+    font-family: 'New-Super-Mario-Font-U';
+    src: url('./font/New-Super-Mario-Font-U.ttf');
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'New-Super-Mario-Font-U';
 }
 
 h1 {
     text-align: center;
     font-size: 80px;
-    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .start-game {
@@ -31,7 +34,6 @@ button {
     height: 120px;
     color: white;
     font-size: 80px;
-    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .end-game {
@@ -56,7 +58,6 @@ button {
 p {
     color: black;
     font-size: 60px;
-    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .button-jump {
@@ -74,7 +75,6 @@ a {
     align-items: center;
     color: black;
     font-size: 40px;
-    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 a:hover {
@@ -143,7 +143,6 @@ button:hover {
     background: brown;
     border: 1px solid black;
 
-    font-family: 'New Super Mario Font U', sans-serif;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
